@@ -1,0 +1,698 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		780702942488EBC4008E0ACA /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780702932488EBC4008E0ACA /* Keyboard.swift */; };
+		7807029A2488EF4F008E0ACA /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780702992488EF4F008E0ACA /* View.swift */; };
+		7807029E24891297008E0ACA /* Mockup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7807029D24891297008E0ACA /* Mockup.swift */; };
+		780702A02489130D008E0ACA /* BuubleShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7807029F2489130D008E0ACA /* BuubleShape.swift */; };
+		780702A22489133B008E0ACA /* ChatMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780702A12489133B008E0ACA /* ChatMessageView.swift */; };
+		780702A524891664008E0ACA /* Message+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780702A324891664008E0ACA /* Message+CoreDataClass.swift */; };
+		780702A624891664008E0ACA /* Message+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780702A424891664008E0ACA /* Message+CoreDataProperties.swift */; };
+		7821EFB724895600000E1F88 /* Speak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7821EFB624895600000E1F88 /* Speak.swift */; };
+		78FA23D02487A6A2008295FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FA23CF2487A6A2008295FB /* AppDelegate.swift */; };
+		78FA23D22487A6A2008295FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FA23D12487A6A2008295FB /* SceneDelegate.swift */; };
+		78FA23D52487A6A2008295FB /* Victoria_Chat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 78FA23D32487A6A2008295FB /* Victoria_Chat.xcdatamodeld */; };
+		78FA23D72487A6A2008295FB /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FA23D62487A6A2008295FB /* ChatView.swift */; };
+		78FA23D92487A6A7008295FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78FA23D82487A6A7008295FB /* Assets.xcassets */; };
+		78FA23DC2487A6A7008295FB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78FA23DB2487A6A7008295FB /* Preview Assets.xcassets */; };
+		78FA23DF2487A6A7008295FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78FA23DD2487A6A7008295FB /* LaunchScreen.storyboard */; };
+		78FA23EA2487A6A7008295FB /* Victoria_ChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FA23E92487A6A7008295FB /* Victoria_ChatTests.swift */; };
+		78FA23F52487A6A7008295FB /* Victoria_ChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FA23F42487A6A7008295FB /* Victoria_ChatUITests.swift */; };
+		78FA24032487A6B9008295FB /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FA24022487A6B9008295FB /* UIColor.swift */; };
+		78FA24052487A814008295FB /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FA24042487A814008295FB /* Color.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		78FA23E62487A6A7008295FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78FA23C42487A6A2008295FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78FA23CB2487A6A2008295FB;
+			remoteInfo = "Victoria-Chat";
+		};
+		78FA23F12487A6A7008295FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78FA23C42487A6A2008295FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78FA23CB2487A6A2008295FB;
+			remoteInfo = "Victoria-Chat";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		780702932488EBC4008E0ACA /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
+		780702992488EF4F008E0ACA /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		7807029D24891297008E0ACA /* Mockup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mockup.swift; sourceTree = "<group>"; };
+		7807029F2489130D008E0ACA /* BuubleShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuubleShape.swift; sourceTree = "<group>"; };
+		780702A12489133B008E0ACA /* ChatMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageView.swift; sourceTree = "<group>"; };
+		780702A324891664008E0ACA /* Message+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Message+CoreDataClass.swift"; sourceTree = "<group>"; };
+		780702A424891664008E0ACA /* Message+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Message+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7821EFB624895600000E1F88 /* Speak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speak.swift; sourceTree = "<group>"; };
+		78FA23CC2487A6A2008295FB /* Victoria-Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Victoria-Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		78FA23CF2487A6A2008295FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		78FA23D12487A6A2008295FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		78FA23D42487A6A2008295FB /* Victoria_Chat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Victoria_Chat.xcdatamodel; sourceTree = "<group>"; };
+		78FA23D62487A6A2008295FB /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		78FA23D82487A6A7008295FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		78FA23DB2487A6A7008295FB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		78FA23DE2487A6A7008295FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		78FA23E02487A6A7008295FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78FA23E52487A6A7008295FB /* Victoria-ChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Victoria-ChatTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		78FA23E92487A6A7008295FB /* Victoria_ChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Victoria_ChatTests.swift; sourceTree = "<group>"; };
+		78FA23EB2487A6A7008295FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78FA23F02487A6A7008295FB /* Victoria-ChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Victoria-ChatUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		78FA23F42487A6A7008295FB /* Victoria_ChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Victoria_ChatUITests.swift; sourceTree = "<group>"; };
+		78FA23F62487A6A7008295FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78FA24022487A6B9008295FB /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		78FA24042487A814008295FB /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		78FA23C92487A6A2008295FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78FA23E22487A6A7008295FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78FA23ED2487A6A7008295FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		780702922488EBB1008E0ACA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				780702932488EBC4008E0ACA /* Keyboard.swift */,
+				7821EFB624895600000E1F88 /* Speak.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		780702952488EC86008E0ACA /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				78FA24022487A6B9008295FB /* UIColor.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		780702962488ECB6008E0ACA /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				78FA24042487A814008295FB /* Color.swift */,
+				780702992488EF4F008E0ACA /* View.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		780702972488EF1C008E0ACA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				780702A324891664008E0ACA /* Message+CoreDataClass.swift */,
+				780702A424891664008E0ACA /* Message+CoreDataProperties.swift */,
+				78FA23D32487A6A2008295FB /* Victoria_Chat.xcdatamodeld */,
+				7807029D24891297008E0ACA /* Mockup.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		780702982488EF2A008E0ACA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7807029F2489130D008E0ACA /* BuubleShape.swift */,
+				780702A12489133B008E0ACA /* ChatMessageView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		78FA23C32487A6A2008295FB = {
+			isa = PBXGroup;
+			children = (
+				78FA23CE2487A6A2008295FB /* Victoria-Chat */,
+				78FA23E82487A6A7008295FB /* Victoria-ChatTests */,
+				78FA23F32487A6A7008295FB /* Victoria-ChatUITests */,
+				78FA23CD2487A6A2008295FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		78FA23CD2487A6A2008295FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				78FA23CC2487A6A2008295FB /* Victoria-Chat.app */,
+				78FA23E52487A6A7008295FB /* Victoria-ChatTests.xctest */,
+				78FA23F02487A6A7008295FB /* Victoria-ChatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		78FA23CE2487A6A2008295FB /* Victoria-Chat */ = {
+			isa = PBXGroup;
+			children = (
+				780702972488EF1C008E0ACA /* Models */,
+				780702982488EF2A008E0ACA /* Views */,
+				780702922488EBB1008E0ACA /* Helpers */,
+				780702962488ECB6008E0ACA /* SwiftUI */,
+				780702952488EC86008E0ACA /* UIKit */,
+				78FA23CF2487A6A2008295FB /* AppDelegate.swift */,
+				78FA23D12487A6A2008295FB /* SceneDelegate.swift */,
+				78FA23D62487A6A2008295FB /* ChatView.swift */,
+				78FA23D82487A6A7008295FB /* Assets.xcassets */,
+				78FA23DD2487A6A7008295FB /* LaunchScreen.storyboard */,
+				78FA23E02487A6A7008295FB /* Info.plist */,
+				78FA23DA2487A6A7008295FB /* Preview Content */,
+			);
+			path = "Victoria-Chat";
+			sourceTree = "<group>";
+		};
+		78FA23DA2487A6A7008295FB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				78FA23DB2487A6A7008295FB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		78FA23E82487A6A7008295FB /* Victoria-ChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				78FA23E92487A6A7008295FB /* Victoria_ChatTests.swift */,
+				78FA23EB2487A6A7008295FB /* Info.plist */,
+			);
+			path = "Victoria-ChatTests";
+			sourceTree = "<group>";
+		};
+		78FA23F32487A6A7008295FB /* Victoria-ChatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				78FA23F42487A6A7008295FB /* Victoria_ChatUITests.swift */,
+				78FA23F62487A6A7008295FB /* Info.plist */,
+			);
+			path = "Victoria-ChatUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		78FA23CB2487A6A2008295FB /* Victoria-Chat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78FA23F92487A6A7008295FB /* Build configuration list for PBXNativeTarget "Victoria-Chat" */;
+			buildPhases = (
+				78FA23C82487A6A2008295FB /* Sources */,
+				78FA23C92487A6A2008295FB /* Frameworks */,
+				78FA23CA2487A6A2008295FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Victoria-Chat";
+			productName = "Victoria-Chat";
+			productReference = 78FA23CC2487A6A2008295FB /* Victoria-Chat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		78FA23E42487A6A7008295FB /* Victoria-ChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78FA23FC2487A6A7008295FB /* Build configuration list for PBXNativeTarget "Victoria-ChatTests" */;
+			buildPhases = (
+				78FA23E12487A6A7008295FB /* Sources */,
+				78FA23E22487A6A7008295FB /* Frameworks */,
+				78FA23E32487A6A7008295FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78FA23E72487A6A7008295FB /* PBXTargetDependency */,
+			);
+			name = "Victoria-ChatTests";
+			productName = "Victoria-ChatTests";
+			productReference = 78FA23E52487A6A7008295FB /* Victoria-ChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		78FA23EF2487A6A7008295FB /* Victoria-ChatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78FA23FF2487A6A7008295FB /* Build configuration list for PBXNativeTarget "Victoria-ChatUITests" */;
+			buildPhases = (
+				78FA23EC2487A6A7008295FB /* Sources */,
+				78FA23ED2487A6A7008295FB /* Frameworks */,
+				78FA23EE2487A6A7008295FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78FA23F22487A6A7008295FB /* PBXTargetDependency */,
+			);
+			name = "Victoria-ChatUITests";
+			productName = "Victoria-ChatUITests";
+			productReference = 78FA23F02487A6A7008295FB /* Victoria-ChatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		78FA23C42487A6A2008295FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = Lundlay;
+				TargetAttributes = {
+					78FA23CB2487A6A2008295FB = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					78FA23E42487A6A7008295FB = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 78FA23CB2487A6A2008295FB;
+					};
+					78FA23EF2487A6A7008295FB = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 78FA23CB2487A6A2008295FB;
+					};
+				};
+			};
+			buildConfigurationList = 78FA23C72487A6A2008295FB /* Build configuration list for PBXProject "Victoria-Chat" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 78FA23C32487A6A2008295FB;
+			productRefGroup = 78FA23CD2487A6A2008295FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				78FA23CB2487A6A2008295FB /* Victoria-Chat */,
+				78FA23E42487A6A7008295FB /* Victoria-ChatTests */,
+				78FA23EF2487A6A7008295FB /* Victoria-ChatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		78FA23CA2487A6A2008295FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78FA23DF2487A6A7008295FB /* LaunchScreen.storyboard in Resources */,
+				78FA23DC2487A6A7008295FB /* Preview Assets.xcassets in Resources */,
+				78FA23D92487A6A7008295FB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78FA23E32487A6A7008295FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78FA23EE2487A6A7008295FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		78FA23C82487A6A2008295FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7807029A2488EF4F008E0ACA /* View.swift in Sources */,
+				7807029E24891297008E0ACA /* Mockup.swift in Sources */,
+				78FA23D52487A6A2008295FB /* Victoria_Chat.xcdatamodeld in Sources */,
+				780702A524891664008E0ACA /* Message+CoreDataClass.swift in Sources */,
+				78FA23D02487A6A2008295FB /* AppDelegate.swift in Sources */,
+				780702942488EBC4008E0ACA /* Keyboard.swift in Sources */,
+				780702A624891664008E0ACA /* Message+CoreDataProperties.swift in Sources */,
+				780702A22489133B008E0ACA /* ChatMessageView.swift in Sources */,
+				7821EFB724895600000E1F88 /* Speak.swift in Sources */,
+				78FA23D72487A6A2008295FB /* ChatView.swift in Sources */,
+				78FA23D22487A6A2008295FB /* SceneDelegate.swift in Sources */,
+				78FA24032487A6B9008295FB /* UIColor.swift in Sources */,
+				780702A02489130D008E0ACA /* BuubleShape.swift in Sources */,
+				78FA24052487A814008295FB /* Color.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78FA23E12487A6A7008295FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78FA23EA2487A6A7008295FB /* Victoria_ChatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78FA23EC2487A6A7008295FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78FA23F52487A6A7008295FB /* Victoria_ChatUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		78FA23E72487A6A7008295FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78FA23CB2487A6A2008295FB /* Victoria-Chat */;
+			targetProxy = 78FA23E62487A6A7008295FB /* PBXContainerItemProxy */;
+		};
+		78FA23F22487A6A7008295FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78FA23CB2487A6A2008295FB /* Victoria-Chat */;
+			targetProxy = 78FA23F12487A6A7008295FB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		78FA23DD2487A6A7008295FB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78FA23DE2487A6A7008295FB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		78FA23F72487A6A7008295FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		78FA23F82487A6A7008295FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		78FA23FA2487A6A7008295FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Victoria-Chat/Preview Content\"";
+				DEVELOPMENT_TEAM = L3PMA9W9RQ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Victoria-Chat/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lundlay.Victoria-Chat";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		78FA23FB2487A6A7008295FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Victoria-Chat/Preview Content\"";
+				DEVELOPMENT_TEAM = L3PMA9W9RQ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Victoria-Chat/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lundlay.Victoria-Chat";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		78FA23FD2487A6A7008295FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L3PMA9W9RQ;
+				INFOPLIST_FILE = "Victoria-ChatTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lundlay.Victoria-ChatTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Victoria-Chat.app/Victoria-Chat";
+			};
+			name = Debug;
+		};
+		78FA23FE2487A6A7008295FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L3PMA9W9RQ;
+				INFOPLIST_FILE = "Victoria-ChatTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lundlay.Victoria-ChatTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Victoria-Chat.app/Victoria-Chat";
+			};
+			name = Release;
+		};
+		78FA24002487A6A7008295FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L3PMA9W9RQ;
+				INFOPLIST_FILE = "Victoria-ChatUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lundlay.Victoria-ChatUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Victoria-Chat";
+			};
+			name = Debug;
+		};
+		78FA24012487A6A7008295FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L3PMA9W9RQ;
+				INFOPLIST_FILE = "Victoria-ChatUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lundlay.Victoria-ChatUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Victoria-Chat";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		78FA23C72487A6A2008295FB /* Build configuration list for PBXProject "Victoria-Chat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78FA23F72487A6A7008295FB /* Debug */,
+				78FA23F82487A6A7008295FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78FA23F92487A6A7008295FB /* Build configuration list for PBXNativeTarget "Victoria-Chat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78FA23FA2487A6A7008295FB /* Debug */,
+				78FA23FB2487A6A7008295FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78FA23FC2487A6A7008295FB /* Build configuration list for PBXNativeTarget "Victoria-ChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78FA23FD2487A6A7008295FB /* Debug */,
+				78FA23FE2487A6A7008295FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78FA23FF2487A6A7008295FB /* Build configuration list for PBXNativeTarget "Victoria-ChatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78FA24002487A6A7008295FB /* Debug */,
+				78FA24012487A6A7008295FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		78FA23D32487A6A2008295FB /* Victoria_Chat.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				78FA23D42487A6A2008295FB /* Victoria_Chat.xcdatamodel */,
+			);
+			currentVersion = 78FA23D42487A6A2008295FB /* Victoria_Chat.xcdatamodel */;
+			path = Victoria_Chat.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 78FA23C42487A6A2008295FB /* Project object */;
+}
