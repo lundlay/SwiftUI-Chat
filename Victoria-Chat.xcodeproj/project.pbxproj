@@ -15,6 +15,8 @@
 		780702A524891664008E0ACA /* Message+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780702A324891664008E0ACA /* Message+CoreDataClass.swift */; };
 		780702A624891664008E0ACA /* Message+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780702A424891664008E0ACA /* Message+CoreDataProperties.swift */; };
 		7821EFB724895600000E1F88 /* Speak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7821EFB624895600000E1F88 /* Speak.swift */; };
+		78A83EBF248A7E2100A4F8D1 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A83EBE248A7E2100A4F8D1 /* UIView.swift */; };
+		78A83EC1248A7E8B00A4F8D1 /* ScrollViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A83EC0248A7E8B00A4F8D1 /* ScrollViewManager.swift */; };
 		78FA23D02487A6A2008295FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FA23CF2487A6A2008295FB /* AppDelegate.swift */; };
 		78FA23D22487A6A2008295FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FA23D12487A6A2008295FB /* SceneDelegate.swift */; };
 		78FA23D52487A6A2008295FB /* Victoria_Chat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 78FA23D32487A6A2008295FB /* Victoria_Chat.xcdatamodeld */; };
@@ -54,6 +56,8 @@
 		780702A324891664008E0ACA /* Message+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Message+CoreDataClass.swift"; sourceTree = "<group>"; };
 		780702A424891664008E0ACA /* Message+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Message+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		7821EFB624895600000E1F88 /* Speak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speak.swift; sourceTree = "<group>"; };
+		78A83EBE248A7E2100A4F8D1 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		78A83EC0248A7E8B00A4F8D1 /* ScrollViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewManager.swift; sourceTree = "<group>"; };
 		78FA23CC2487A6A2008295FB /* Victoria-Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Victoria-Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78FA23CF2487A6A2008295FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78FA23D12487A6A2008295FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				78FA24022487A6B9008295FB /* UIColor.swift */,
+				78A83EBE248A7E2100A4F8D1 /* UIView.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -144,6 +149,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		78A83EC2248A7EB600A4F8D1 /* 3rd-party */ = {
+			isa = PBXGroup;
+			children = (
+				78A83EC0248A7E8B00A4F8D1 /* ScrollViewManager.swift */,
+			);
+			path = "3rd-party";
+			sourceTree = "<group>";
+		};
 		78FA23C32487A6A2008295FB = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +180,7 @@
 		78FA23CE2487A6A2008295FB /* Victoria-Chat */ = {
 			isa = PBXGroup;
 			children = (
+				78A83EC2248A7EB600A4F8D1 /* 3rd-party */,
 				780702972488EF1C008E0ACA /* Models */,
 				780702982488EF2A008E0ACA /* Views */,
 				780702922488EBB1008E0ACA /* Helpers */,
@@ -347,9 +361,11 @@
 				78FA23D02487A6A2008295FB /* AppDelegate.swift in Sources */,
 				780702942488EBC4008E0ACA /* Keyboard.swift in Sources */,
 				780702A624891664008E0ACA /* Message+CoreDataProperties.swift in Sources */,
+				78A83EC1248A7E8B00A4F8D1 /* ScrollViewManager.swift in Sources */,
 				780702A22489133B008E0ACA /* ChatMessageView.swift in Sources */,
 				7821EFB724895600000E1F88 /* Speak.swift in Sources */,
 				78FA23D72487A6A2008295FB /* ChatView.swift in Sources */,
+				78A83EBF248A7E2100A4F8D1 /* UIView.swift in Sources */,
 				78FA23D22487A6A2008295FB /* SceneDelegate.swift in Sources */,
 				78FA24032487A6B9008295FB /* UIColor.swift in Sources */,
 				780702A02489130D008E0ACA /* BuubleShape.swift in Sources */,

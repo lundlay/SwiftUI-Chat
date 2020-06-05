@@ -34,6 +34,8 @@ struct ChatView: View {
         ]
     ) var messages: FetchedResults<Message>
     
+    @State var indexPathToSetVisible: IndexPath?
+    
     var body: some View {
         
         NavigationView {
@@ -41,6 +43,11 @@ struct ChatView: View {
                 List(self.messages, id: \.self) { message in
                     ChatMessageView(message: message, isIncoming: message.user)
                 }
+                .overlay(
+                    ScrollManagerView(indexPathToSetVisible: $indexPathToSetVisible)
+                        .allowsHitTesting(false).frame(width: 0, height: 0)
+                )
+                
                 HStack {
                     TextField("Please, enter message...", text: self.$typingMessage)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
@@ -48,17 +55,22 @@ struct ChatView: View {
                     Button(action: self.actionSendMessage) {
                         Image(systemName: "paperplane.fill")
                     }
-                }.frame(minHeight: CGFloat(50)).padding()
+                }
+                .frame(minHeight: CGFloat(50)).padding()
+                
             }.navigationBarTitle(Text("Dialogue"), displayMode: .inline)
                 .navigationBarItems(trailing:
                     Button(action: actionRefresh) {
                         Image(systemName: "arrow.clockwise")
                     }
             )
-                .padding(.bottom, keyboard.height)
-                .edgesIgnoringSafeArea(keyboard.height == 0.0 ? .leading: .bottom)
+            .edgesIgnoringSafeArea(keyboard.height == 0.0 ? .leading: .bottom)
+            .offset(y: -keyboard.height).animation(.easeInOut(duration: 0.35))
+
         }.onTapGesture {
             self.endEditing(true)
+        }.onAppear {
+            self.scrollToBottom()
         }
         
     }
@@ -73,7 +85,10 @@ struct ChatView: View {
         message.body = typingMessage
         
         try? context.save()
-        
+        self.indexPathToSetVisible = IndexPath(
+            row: self.messages.count - 1, section: 0
+        )
+
         let say = self.typingMessage
         let reversed = String(self.typingMessage.reversed())
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
@@ -83,6 +98,9 @@ struct ChatView: View {
             message.body = reversed
             message.user = false
             try? self.context.save()
+            
+            self.scrollToBottom()
+            
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                 Speak.say(message: say)
             }
@@ -132,6 +150,12 @@ struct ChatView: View {
 //            }
 //        }
         
+    }
+    
+    func scrollToBottom() {
+        self.indexPathToSetVisible = IndexPath(
+            row: self.messages.count - 1, section: 0
+        )
     }
     
 }
